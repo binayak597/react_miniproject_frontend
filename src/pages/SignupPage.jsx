@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Box, Flex, Input, Button, Select, Heading } from "@chakra-ui/react";
 import { registerUser } from "../utils/handleApi";
-import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 export default function SignupPage() {

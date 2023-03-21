@@ -4,7 +4,7 @@ import Admin from "../pages/AdminPage";
 
 
 export default function AdminRoute({children}){
-    const { auth, token, role, userId, userName } = useSelector((state) => state);
+    const { role } = useSelector((state) => state);
 
     if(role !== "admin"){
         return <HomePage />;
