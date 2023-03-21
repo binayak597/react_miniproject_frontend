@@ -1,21 +1,11 @@
 import React from "react";
 import {
     Box,
-    Heading,
     Flex,
-    Avatar,
-    Link,
     Button,
-    Menu,
-    MenuButton,
-    MenuList,
-    MenuItem,
-    MenuDivider,
-    useDisclosure,
     useColorModeValue,
     Stack,
     useColorMode,
-    Center,
     Wrap,
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
@@ -27,8 +17,7 @@ import { Logout } from "../redux/auth.actions";
 
 export default function Navbar() {
     const { colorMode, toggleColorMode } = useColorMode();
-    const { isOpen, onOpen, onClose } = useDisclosure();
-    const { auth, token, role, userName } = useSelector((state) => state);
+    const { auth, role} = useSelector((state) => state);
     const dispatch = useDispatch();
     return (
         <>

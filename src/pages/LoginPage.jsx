@@ -11,7 +11,7 @@ export default function LoginPage() {
         password: ""
     });
 
-    const { auth, token, role, userId, userName } = useSelector((state) => state);
+    const { auth } = useSelector((state) => state);
     const navigate = useNavigate();
     const dispatch = useDispatch();
 

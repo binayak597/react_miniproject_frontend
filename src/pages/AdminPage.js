@@ -5,7 +5,7 @@ import { deleteUser, updateUser } from "../utils/handleApi";
 import { useNavigate } from "react-router-dom";
 
 export default function Admin(){
-    const { auth, token, role, userId, userName } = useSelector((state) => state);
+    const { role, userId, userName } = useSelector((state) => state);
     const[key, setKey] = useState("Select");
     const[changeData, setChangeData] = useState("");
     const navigate = useNavigate();
